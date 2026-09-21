@@ -20155,6 +20155,81 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.3",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so"],
+        },
+    },
+    vendor: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmemperfd",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    srcs: ["proprietary/vendor/lib64/libmemperfd.so"],
+    vendor: true,
+    check_elf_files: false,
+}
+
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,
